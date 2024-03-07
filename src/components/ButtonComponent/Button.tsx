@@ -1,3 +1,4 @@
+import './Button.css'
 interface ButtonProps {
     placeholder: string;
     onClick: () => void;
@@ -5,7 +6,7 @@ interface ButtonProps {
   
 const Button: React.FC<ButtonProps> = ({ placeholder, onClick }) => {
     return (
-      <button onClick={onClick}>
+      <button onClick={onClick} className="button">
         {placeholder}
       </button>
     );
